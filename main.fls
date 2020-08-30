@@ -436,6 +436,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/libertine/T1LinuxLibertineMonoT-TL
 INPUT /usr/share/texlive/texmf-dist/tex/latex/libertine/T1LinuxLibertineMonoT-TLF.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinLibertineMT-tlf-t1.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinLibertineMTO-tlf-t1.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/newtx/ntxsy.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/txsys.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/txex-bar.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-sc-t1.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-sc-t1--base.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/libertine/LinLibertineMT-tlf-t1.vf

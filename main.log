@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.30)  19 AUG 2020 20:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.30)  30 AUG 2020 20:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1308,10 +1308,6 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 12.0pt on input line 477.
-
-
-LaTeX Warning: Citation `har77' on page 1 undefined on input line 479.
-
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 484.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
@@ -1319,19 +1315,19 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.6pt on input line 484.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 500.
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.bbl (./main.brf)
+(Font)              scaled to size 9.0pt on input line 501.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 506.
+ (./main.bbl (./main.brf)
 \tf@brf=\write6
 \openout6 = `main.brf'.
 
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 506.
+(Font)              scaled to size 10.0pt on input line 515.
 LaTeX Font Info:    Trying to load font information for T1+LinuxLibertineMonoT-
-TLF on input line 506.
+TLF on input line 515.
 
 (/usr/share/texlive/texmf-dist/tex/latex/libertine/T1LinuxLibertineMonoT-TLF.fd
 File: T1LinuxLibertineMonoT-TLF.fd 2019/05/20 (autoinst) Font definitions for T
@@ -1340,42 +1336,38 @@ File: T1LinuxLibertineMonoT-TLF.fd 2019/05/20 (autoinst) Font definitions for T
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <10> no
 t available
 (Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
-tead on input line 506.
+tead on input line 515.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 506.
+(Font)              scaled to size 10.0pt on input line 515.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/it' in size <10> n
 ot available
 (Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/it' tried in
-stead on input line 506.
+stead on input line 515.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/it' in size 
 <10> not available
 (Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/sl' tried in
-stead on input line 506.
+stead on input line 515.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/sl' will be
-(Font)              scaled to size 10.0pt on input line 506.
+(Font)              scaled to size 10.0pt on input line 515.
  [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 506.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 506.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 515.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 515.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 506.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 506.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 515.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 515.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 10E2F3811CFE501DBAFADD1F6FDD377D;109.
+(rerunfilecheck)             Checksum: AF002B4288D7B9F9782FA3D65639388E;109.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 6411A294B082060FD43C6C1484C82BE6;44.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: FCFAF3EC276F01F765054071646898B0;110.
  ) 
 Here is how much of TeX's memory you used:
- 25859 strings out of 481239
- 489744 string characters out of 5920377
- 723950 words of memory out of 5000000
- 40399 multiletter control sequences out of 15000+600000
- 609088 words of font info for 126 fonts, out of 8000000 for 9000
+ 25983 strings out of 481239
+ 492330 string characters out of 5920377
+ 724950 words of memory out of 5000000
+ 40514 multiletter control sequences out of 15000+600000
+ 609657 words of font info for 128 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 67i,6n,84p,770b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,9n,84p,770b,1234s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_dhi6qf.enc}{/us
 r/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/usr/shar
 e/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/share/texl
@@ -1391,10 +1383,10 @@ e1/public/libertine/LinLibertineTB.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/libertine/LinLibertineTI.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/txfonts/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/n
 ewtx/txsys.pfb>
-Output written on main.pdf (2 pages, 316488 bytes).
+Output written on main.pdf (2 pages, 321968 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
+ 125 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
  125 words of extra memory for PDF output out of 10000 (max. 10000000)
 
