@@ -28,7 +28,7 @@
 \usepackage{mathtools}
 % Loads the amsmath package (\usepackage{amsmath}: miscellaneous improvements such as the commands \DeclareMathOperator and \text). It fixes some quirks it has and adds some useful settings, symbols and environments. It improves the aesthetics as well.
 
-\usepackage{amssymb}
+%\usepackage{amssymb}
 % Extended symbol collection, e.g. \Cap and \Cup. More importantly: the \mathbb command! It loads the amsfonts package (\usepackage{amsfonts}: fraktur letters, bold Greek letters...), so we do not need to include it in the preamble anymore.
 
 \usepackage{mathrsfs}
@@ -58,11 +58,11 @@
 \usepackage{float}
 % Improved interface for floating objects such as figures and tables, introducing for example the H modifier to force the position of a float in the page or the boxed float. Should be loaded before hyperref.
 
-\usepackage[backref]{hyperref}
+\usepackage{hyperref}
 % To handle cross-referencing and produce hypertext links in the document. It should be loaded last (with few exceptions), because it redefines many LaTeX commands.
 % The backref option inserts links on each bibliography entry to the pages in which the citation was used.
 %% The hidelinks option removes colors and boxes around links, but the links remain clickable. On firefox the links are even highlighted when the mouse pointer passes over them.
-\renewcommand{\backref}[1]{$\uparrow$~#1}
+%\renewcommand{\backref}[1]{$\uparrow$~#1}
 % Adds an upwards arrow before referencing to the pages in which the citations appear.
 
 \usepackage[noabbrev]{cleveref}
@@ -451,7 +451,7 @@ mark = at position 0.5 with
 % Change name of ToC
 \addto\captionsUKenglish{
     \renewcommand{\contentsname}
-	{List of Talks}
+	{List of Talks (assuming 1h 30min / Talk)}
 }
 
 % Math operators
@@ -529,6 +529,8 @@ Degree map \cite[Prop.~1.21]{eh16}.
 \subsection{Mayer--Vietoris and excision \cite[\S 1.3.4]{eh16}}
 
 \subsection{Affine stratifications \cite[\S 1.3.5]{eh16}}
+With examples of what is or isn't a stratification, examples of quasi-affine stratifications that are not affine, etc.
+Totaro's theorem \cite[Thm.~1.18]{eh16} is nice to know, although it won't be used later on.
 
 \subsection{Chow ring of projective space} \cite[Thm.~2.1]{eh16} and corollaries \cite[Cor.~2.2 and Cor.~2.3]{eh16}.
 Bézout's theorem as a consequence of \cite[Thm.~2.1]{eh16}.
@@ -549,8 +551,23 @@ As an immediate consequence of the previous point and transversality: how many l
 
 \section{Talk 4 --- Specialisation and Knutson--Tao puzzles}
 
-Explain these two techniques and how to use them to give a different proof of the number of lines intersecting $4$ general lines.
-This is covered in the YouTube video...
+Schubert calculus studies how to compute products of Schubert classes.
+There are many different approaches to this, e.g.~using Young diagrams \cite[\S 4.5]{eh16}.
+In this talk we will instead discuss an approach due to Knutson and Tao, which is very visual and combinatoric as well.
+
+
+\subsection{Brief recollection of previous talk}
+Using the method of undetermined coefficients to compute the square $\sigma_{1}^{2}$ of the Schubert class of lines intersecting a given line.
+
+\subsection{(Static) specialisation \cite[\S 3.5.1]{eh16}}
+This is another useful technique to compute products of Schubert classes.
+As an example we can use it to compute $\sigma_{1}^{2}$ in a different way.
+This will require describing the tangent space of the Schubert cycle of lines intersecting a given line $L$ at a point different from $L$ \cite[Exe.~3.26]{eh16}.
+
+\subsection{Knutson--Tao puzzles}
+These give a nice visual tool to compute products of Schubert classes.
+Besides of the original article [add ref], there is also a nice YouTube video discussing them [add link].
+Again, one can use the computation of $\sigma_{1}^{2}$ as an example, as is done in the video already.
 
 \section{Talk 5 --- Chern classes and lines on a cubic surface}
 
@@ -562,4 +579,3 @@ The number 27 should come out, but one should also explain clearly what remains 
 \vfill
 
 \end{document}
-
