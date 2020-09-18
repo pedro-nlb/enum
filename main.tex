@@ -25,6 +25,9 @@
 \usepackage[UKenglish]{babel}
 % To manage culturally determined typographical and similar rules, in this case for british english. Some people suggest to load babel after fontenc to avoid warnings, although most agree that it does not matter.
 
+\usepackage{geometry}
+\geometry{margin=3cm}
+
 \usepackage{mathtools}
 % Loads the amsmath package (\usepackage{amsmath}: miscellaneous improvements such as the commands \DeclareMathOperator and \text). It fixes some quirks it has and adds some useful settings, symbols and environments. It improves the aesthetics as well.
 
@@ -72,9 +75,9 @@
 %%% General things
 
 % Custom colors
-\definecolor{darkgreen}{RGB}{0,75,0}
-\definecolor{darkblue}{RGB}{0,0,75}
-\definecolor{darkred}{RGB}{75,0,0}
+\definecolor{darkgreen}{RGB}{0,100,0}
+\definecolor{darkblue}{RGB}{0,0,100}
+\definecolor{darkred}{RGB}{100,0,0}
 \definecolor{linkred}{rgb}{0.7,0.2,0.2}
 \definecolor{linkblue}{rgb}{0,0.2,0.6}
 
@@ -421,8 +424,8 @@ mark = at position 0.5 with
 \indent Albert-Ludwigs-Universit\"{a}t Freiburg, Mathematisches Institut \newline
 \indent Ernst-Zermelo-Straße 1, 79104 Freiburg im Breisgau (Germany)}
 \email{\href{mailto:pedro.nunez@math.uni-freiburg.de}{pedro.nunez@math.uni-freiburg.de}}
-\renewcommand*{\urladdrname}{\itshape Homepage}
-\urladdr{\href{https://home.mathematik.uni-freiburg.de/nunez/}{https://home.mathematik.uni-freiburg.de/nunez}}
+%\renewcommand*{\urladdrname}{\itshape Homepage}
+%\urladdr{\href{https://home.mathematik.uni-freiburg.de/nunez/}{https://home.mathematik.uni-freiburg.de/nunez}}
 %\thanks{The author gratefully acknowledges support by the DFG-Graduiertenkolleg GK1821 ``Cohomological Methods in Geometry'' at the University of Freiburg.}
 
 % Content details
@@ -443,9 +446,9 @@ mark = at position 0.5 with
   pdfpagemode={UseOutlines},
   bookmarks,
   colorlinks,
-  linkcolor=linkblue,
-  citecolor=linkred,
-  urlcolor=linkred}
+  linkcolor=darkblue,
+  citecolor=darkgreen,
+  urlcolor=darkred}
 \makeatother
 
 % Change name of ToC
@@ -475,23 +478,30 @@ mark = at position 0.5 with
 
 \maketitle
 
+\vspace{-3mm}
+
 \tableofcontents
+
+\vspace{-9mm}
 
 Some suggestions that apply to all the talks:
 \begin{itemize}
-    \item Follow \textit{3264 and all that}, by Eisenbud and Harris \cite{eh16}.
-    \item Work only over $\C$, even if it is not necessary at many points.
-    \item Try to avoid scheme-theoretic technical details.
-    \item Try to draw many pictures and focus on examples.
+    \item Working only over $\C$ sounds like a good idea, even if it is often unnecessary.
+    \item The book \textit{3264 and all that} written by Eisenbud and Harris \cite{eh16} should provide a self-contained reference for the seminar.
+	They often use schemes, but I think the book has a very geometric flavour and most arguments can be followed without knowing precisely what schemes are.
+	There is also an introduction to schemes again with a very geometric flavour by the same authors \cite{eh00}.
+    \item In fact I would try to avoid scheme-theoretic details altogether and instead try to draw many pictures and focus on examples with complex manifolds.
+    \item There are connections and similarities with other areas, especially with singular homology.
+	I think it would be nice to hear about them every now and then.
 \end{itemize}
 
-But feel free to do otherwise if you want/need at some point!
+But these are only suggestions, feel free to do otherwise if you want/need at some point!
 
 \section{Talk 1 --- The Chow ring. Affine spaces.}
 
 \subsection{Algebraic varieties}
 
-These have already appeared often in past Wednesday seminars, so hopefully we can keep this to a very brief introduction/recollection.
+These have already appeared often in past Wednesday seminars, so hopefully we can keep this to a very brief introduction or recollection.
 Possible things that may be useful to say:
 \begin{itemize}
     \item Huge open subsets (no strict Hausdorffness, no local $\A^{n}$-ness).
@@ -537,24 +547,20 @@ Bézout's theorem as a consequence of \cite[Thm.~2.1]{eh16}.
 
 \section{Talk 3 --- Grassmannian of lines in space}
 
-\subsection{Kleiman's transversality:} \cite[Thm.~1.7]{eh16} and its proof in the case of $\GL_{n}(\C)$.
+\subsection{Kleiman's transversality \cite[Thm.~1.7]{eh16}}
+Proof in the case of $\GL_{n}(\C)$.
 
-\subsection{Grassmannians.}
-definition and projective spaces as a particular case.
+\subsection{Grassmannians}
+Definition and projective spaces as a particular case.
 Pl\"{u}cker embedding and affine open cover already in the case of the Grassmannian of lines in $\P^{3}$.
 Schubert cycles and stratification of $\bbG(1,3)$.
 
-\subsection{Computation of the Chow ring:} \cite[Thm.~3.10]{eh16}.
+\subsection{Computation of the Chow ring \cite[Thm.~3.10]{eh16}}
 Mentioning explicitly how to use Kleiman's transversality and the method of undetermined coefficients during the proof.
 
 As an immediate consequence of the previous point and transversality: how many lines in $\P^{3}$ intersect $4$ general lines?
 
 \section{Talk 4 --- Specialisation and Knutson--Tao puzzles}
-
-Schubert calculus studies how to compute products of Schubert classes.
-There are many different approaches to this, e.g.~using Young diagrams \cite[\S 4.5]{eh16}.
-In this talk we will instead discuss an approach due to Knutson and Tao, which is very visual and combinatoric as well.
-
 
 \subsection{Brief recollection of previous talk}
 Using the method of undetermined coefficients to compute the square $\sigma_{1}^{2}$ of the Schubert class of lines intersecting a given line.
@@ -569,10 +575,29 @@ These give a nice visual tool to compute products of Schubert classes.
 Besides various articles by Knutson, Tao and others, see e.g.~\cite{ktw04}, there is also a nice YouTube video discussing them \href{https://youtu.be/U8sq3BplCfI}{https://youtu.be/U8sq3BplCfI}.
 Again, one can use the computation of $\sigma_{1}^{2}$ as an example, as is done in the video already.
 
+The speaker may want to discuss other combinatoric methods to compute products of Schubert classes as well/instead, e.g.~Young diagrams \cite[\S 4.5]{eh16}.
+Whatever they prefer.
+
 \section{Talk 5 --- Chern classes and lines on a cubic surface}
 
-Use them to sketch the fact that there are 27 lines on a cubic surface.
-The number 27 should come out, but one should also explain clearly what remains to be shown in order to have an actual proof.
+\subsection{First Chern class of a line bundle \cite[\S 1.4]{eh16}}
+Examples could include $c_{1}(K_{\P^{n}})$.
+Geometric motivation to generalise and define higher Chern classes \cite[\S 5.2]{eh16}.
+
+\subsection{Axiomatic definition of Chern classes}
+Maybe mentioning some ideas in the existence proof but without getting into details \cite[\S 5.3]{eh16}.
+
+\subsection{The splitting principle \cite[\S 5.4]{eh16}}
+And how to use it to derive various formulas \cite[\S 5.5]{eh16}.
+
+\subsection{Tautological bundles \cite[\S 5.6]{eh16}}
+And computation of the Chern classes of the dual of the tautological subbundle of rank $2$ on our Grassmannian $\bbG(1,3)$ as an example \cite[\S 5.6.2]{eh16}.
+
+\subsection{Counting lines on a cubic surface}
+Following the argument in \cite[Thm.~5.1]{eh16} and using \cite[\S 5.6.2]{eh16} and \cite[\S 6.2.1]{eh16}.
+Emphasis on what the argument in \cite[Thm.~5.1]{eh16} does and does not show, i.e.~there are some statements that remain to be shown in order to actually prove that there are exactly 27 lines.
+May be useful to compare this with the discussion in \cite[\S 3.1]{eh16}.
+If time permits and the speaker wants, maybe also briefly sketch the rest of the argument involving Fano varieties \cite[\S 6.1--6.2]{eh16}.
 
 \bibliographystyle{alpha}
 \bibliography{main}
