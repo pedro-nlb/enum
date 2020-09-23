@@ -224,7 +224,6 @@
 % Mathfrak for ideals
 \renewcommand{\a}{\mathfrak{a}}
 \renewcommand{\b}{\mathfrak{b}}
-\renewcommand{\c}{\mathfrak{c}}
 \renewcommand{\d}{\mathfrak{d}}
 \newcommand{\e}{\mathfrak{e}}
 \newcommand{\m}{\mathfrak{m}}
@@ -265,6 +264,7 @@
 \newtheorem{rem}[thm]{Remark}
 \newtheorem{nota}[thm]{Notation}
 \newtheorem{q}[thm]{Question}
+\newtheorem{caveat}[thm]{Caveat}
 \newtheorem{exe}[thm]{Exercise}
 
 % Custom numbered theorems
@@ -367,6 +367,8 @@
 \Crefname{nota}{Notation}{Notations}
 \crefname{q}{question}{questions}
 \Crefname{q}{Question}{Questions}
+\crefname{caveat}{caveat}{caveats}
+\Crefname{caveat}{Caveat}{Caveats}
 \crefname{exe}{exercise}{exercises}
 \Crefname{exe}{Exercise}{Exercises}
 % More cross-referencing
@@ -493,16 +495,42 @@ Some suggestions that apply to all the talks:
     \item In fact I would try to avoid scheme-theoretic details altogether and instead try to draw many pictures and focus on examples with complex manifolds.
     \item There are connections and similarities with other areas, especially with singular homology.
 	I think it would be nice to hear about them every now and then.
+    \item Every talk ---except the first one--- is meant to start with a brief recollection of previous talks.
+	The idea is to quickly recall the main results and definitions and then apply them in some specific situation.
 \end{itemize}
 
 But these are only suggestions, feel free to do otherwise if you want/need at some point!
 
-\section{Talk 1 --- The Chow ring. Affine spaces.}
+\section{Talk 1 --- Introduction and the Chow ring}
+
+\subsection{Introduction and motivation}
+What are enumerative problems and how do we go about solving them?
+See \cite[\S 3.1.1]{eh16}.
+What are ---roughly speaking--- intersection theory and the Chow ring, and what is their role in the process of solving an enumerative problem?
+See \cite[\S 1.1]{eh16} and \cite[\S 3.1.1]{eh16}.
+The problem that we will take as an example to introduce most of the concepts during the first four talks is the following
+
+\begin{q}
+    How many lines in $\P^{3}$ intersect four given lines in general position?
+\end{q}
+
+\begin{caveat}\label{caveat1}
+    One should not jump to precise conclusions immediately after some numerical computation, see \cite[\S 3.1.2]{eh16}.
+    The meaning of this caveat will become clearer with an example that we will discuss during the last two talks, namely
+\end{caveat}
+
+\begin{q}
+    How many lines does a smooth cubic surface $S\subseteq \P^{3}$ contain?
+\end{q}
+
+Using Chern classes we will see that the relevant class in the relevant Chow ring has degree 27, but this is not enough to conclude that there are precisely 27 lines.
 
 \subsection{Algebraic varieties}
 
 These have already appeared often in past Wednesday seminars, so hopefully we can keep this to a very brief introduction or recollection.
-Possible things that may be useful to say:
+Something that we will use in later talks is the degree of a projective variety.
+I think having the intuitive definition with hyperplane cuts in mind is enough, but perhaps mentioning at least that there is a definition using the Hilbert polynomial is a good idea.
+Other things that may be useful to mention:
 \begin{itemize}
     \item Huge open subsets (no strict Hausdorffness, no local $\A^{n}$-ness).
     \item The union of two intersecting lines is connected but not irreducible.
@@ -520,7 +548,12 @@ Generic transversality and moving lemma \cite[Thm.~1.6]{eh16}.
 What goes wrong without the smoothness assumption?
 Example in \cite[p.~20]{eh16}.
 
-\subsection{Chow groups of affine spaces}
+\section{Talk 2 --- Basic computational tools}
+
+\subsection{Brief recollection of previous talk}
+Cycles, rational equivalence and intersection product.
+
+\subsection{Chow groups of affine spaces using what we saw in the previous talk}
 For any variety $X$, the equivalence class $[X]$ is a free generator of $A^{0}(X)$.
 This can be argued using irreducibility and dimension.
 In the case of affine spaces, this free cyclic group is all there is \cite[Prop.~1.13]{eh16}.
@@ -532,43 +565,64 @@ I wouldn't define properness and flatness too seriously, but it is good to know 
 Degree map \cite[Prop.~1.21]{eh16}.
 \cite[Thm.~1.23]{eh16} without details of the proof.
 
-\section{Talk 2 --- Affine stratifications. Projective spaces.}
-
-\subsection{Brief recollection of previous talk} Cycles, rational equivalence, functoriality.
-
 \subsection{Mayer--Vietoris and excision \cite[\S 1.3.4]{eh16}}
 
 \subsection{Affine stratifications \cite[\S 1.3.5]{eh16}}
 With examples of what is or isn't a stratification, examples of quasi-affine stratifications that are not affine, etc.
 Totaro's theorem \cite[Thm.~1.18]{eh16} is nice to know, although it won't be used later on.
 
-\subsection{Chow ring of projective space} \cite[Thm.~2.1]{eh16} and corollaries \cite[Cor.~2.2 and Cor.~2.3]{eh16}.
+\section{Talk 3 --- Grassmannians and Schubert cycles}
+
+\subsection{Brief recollection of the previous talk}
+Proper pushforward, degree map and stratifications.
+
+\subsection{Chow ring of projective space using what we saw in previous talks} \cite[Thm.~2.1]{eh16} and corollaries \cite[Cor.~2.2 and Cor.~2.3]{eh16}.
 Bézout's theorem as a consequence of \cite[Thm.~2.1]{eh16}.
-
-\section{Talk 3 --- Grassmannian of lines in space}
-
-\subsection{Kleiman's transversality \cite[Thm.~1.7]{eh16}}
-Proof in the case of $\GL_{n}(\C)$.
 
 \subsection{Grassmannians}
 Definition and projective spaces as a particular case.
-Pl\"{u}cker embedding and affine open cover already in the case of the Grassmannian of lines in $\P^{3}$.
-Schubert cycles and stratification of $\bbG(1,3)$.
+Pl\"{u}cker embedding \cite[\S 3.2.1]{eh16} and affine open cover \cite[\S 3.2.2]{eh16}.
+I would suggest to focus just on the Grassmannian of lines in $\P^{3}$ to discuss these notions, since it is the one we will be using later on and I think it would make the notation more explicit and clear.
 
-\subsection{Computation of the Chow ring \cite[Thm.~3.10]{eh16}}
-Mentioning explicitly how to use Kleiman's transversality and the method of undetermined coefficients during the proof.
+\subsection{Schubert cycles}
+Again, I would stick to the case of $\bbG(1,3)$, discussed in detail in \cite[\S 3.3.1]{eh16}.
+In this case we can also draw nice pictures \cite[Fig.~3.3]{eh16}.
+State Kleiman's transversality \cite[Thm.~1.7]{eh16} and explain what it means for Schubert cycles with respect to different flags \cite[p.~105]{eh16}.
 
-As an immediate consequence of the previous point and transversality: how many lines in $\P^{3}$ intersect $4$ general lines?
+\section{Talk 4 --- How many lines intersect 4 random lines in space?}
 
-\section{Talk 4 --- Specialisation and Knutson--Tao puzzles}
+\subsection{Brief recollection of previous talks}
+Stratifications, $\bbG(1,3)$ and its Schubert cycles.
 
-\subsection{Brief recollection of previous talk}
-Using the method of undetermined coefficients to compute the square $\sigma_{1}^{2}$ of the Schubert class of lines intersecting a given line.
+\subsection{Computation of the Chow ring using what we saw in previous talks}
+This computation is carried out in \cite[Thm.~3.10]{eh16}.
+I would stress how to use Kleiman's transversality \cite[Thm.~1.7]{eh16} and the method of undetermined coefficients during the proof.
+
+After this computation we can already answer the question in the title of the talk.
+But this also seems like a good time to recall \Cref{caveat1}.
+Why is the precise answer to the question justified in this case?
 
 \subsection{(Static) specialisation \cite[\S 3.5.1]{eh16}}
 This is another useful technique to compute products of Schubert classes.
 As an example we can use it to compute $\sigma_{1}^{2}$ in a different way.
 This will require describing the tangent space of the Schubert cycle of lines intersecting a given line $L$ at a point different from $L$ \cite[Exe.~3.26]{eh16}.
+
+\subsection{Geometry behind the answer to the title of this talk}
+Paraphrasing \.{I}zzet Co\c{s}kun: What shape do you produce when you want to cook spaguetti and you put them in a pot?
+What does the answer to this question have to do with the title of this talk?
+See \cite[\S 3.4.1]{eh16}.
+
+\section{Talk 5 --- Knutson--Tao puzzles and Chern classes}
+
+The two topics in the title of this talk are not directly related to each other and they are only in the same talk because I couldn't figure out a better way to organise the contents.
+So this talk will probably have two very indepenedent parts:
+\begin{enumerate}
+    \item Recollections from previous talk and some more Schubert calculus.
+    \item Introduction to Chern classes.
+\end{enumerate}
+
+\subsection{Brief recollection of the previous talk}
+Using the methods of undetermined coefficients and static specialisation to compute $\sigma_{1}^{2}$.
 
 \subsection{Knutson--Tao puzzles}
 These give a nice visual tool to compute products of Schubert classes.
@@ -578,26 +632,33 @@ Again, one can use the computation of $\sigma_{1}^{2}$ as an example, as is done
 The speaker may want to discuss other combinatoric methods to compute products of Schubert classes as well/instead, e.g.~Young diagrams \cite[\S 4.5]{eh16}.
 Whatever they prefer.
 
-\section{Talk 5 --- Chern classes and lines on a cubic surface}
-
 \subsection{First Chern class of a line bundle \cite[\S 1.4]{eh16}}
-Examples could include $c_{1}(K_{\P^{n}})$.
+A nice explicit example of computation could be $c_{1}(K_{\P^{n}})$.
 Geometric motivation to generalise and define higher Chern classes \cite[\S 5.2]{eh16}.
 
 \subsection{Axiomatic definition of Chern classes}
 Maybe mentioning some ideas in the existence proof but without getting into details \cite[\S 5.3]{eh16}.
+It would also be nice to mention here that one can use Chern--Weil theory for a differential-geometric approach to the existence of Chern classes.
 
 \subsection{The splitting principle \cite[\S 5.4]{eh16}}
-And how to use it to derive various formulas \cite[\S 5.5]{eh16}.
+
+\section{Talk 6 --- How many lines does a smooth cubic surface contain?}
+
+\subsection{Brief recollection from the previous talk}
+Axiomatic definition of Chern classes and splitting principle.
+
+\subsection{Derivation of some formulas using what we saw in the previous talk \cite[\S 5.5]{eh16}}
 
 \subsection{Tautological bundles \cite[\S 5.6]{eh16}}
-And computation of the Chern classes of the dual of the tautological subbundle of rank $2$ on our Grassmannian $\bbG(1,3)$ as an example \cite[\S 5.6.2]{eh16}.
+I think describing them just for $\bbG(1,3)$ and projective spaces should be enough.
+It could also be nice to compute explicitly ---with coordinates--- that the tautological line bundle on $\P^{n}$ is $\O(-1)$.
+An example that will be used later and seems good to put into practice all the tools discussed so far is the computation of the Chern classes of the dual of the tautological subbundle of rank $2$ on our Grassmannian $\bbG(1,3)$, see \cite[\S 5.6.2]{eh16}.
 
 \subsection{Counting lines on a cubic surface}
 Following the argument in \cite[Thm.~5.1]{eh16} and using \cite[\S 5.6.2]{eh16} and \cite[\S 6.2.1]{eh16}.
-Emphasis on what the argument in \cite[Thm.~5.1]{eh16} does and does not show, i.e.~there are some statements that remain to be shown in order to actually prove that there are exactly 27 lines.
-May be useful to compare this with the discussion in \cite[\S 3.1]{eh16}.
-If time permits and the speaker wants, maybe also briefly sketch the rest of the argument involving Fano varieties of lines \cite[\S 6.1--6.2]{eh16}.
+Recall \Cref{caveat1} and the discussion in \cite[\S 3.1.2]{eh16}.
+What does the argument in \cite[Thm.~5.1]{eh16} show and what remains to be shown in order to give a precise answer to the question in the title of this talk?
+If time permits and the speaker wants, it might be nice to also briefly sketch the rest of the argument involving Fano varieties of lines \cite[\S 6.1--6.2]{eh16}.
 
 \bibliographystyle{alpha}
 \bibliography{main}
